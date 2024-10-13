@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		57F374772CBC49EA00060CEB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 57F374762CBC49EA00060CEB /* FirebaseAnalytics */; };
+		57F374792CBC49EA00060CEB /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 57F374782CBC49EA00060CEB /* FirebaseAnalyticsOnDeviceConversion */; };
+		57F3747B2CBC49EA00060CEB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 57F3747A2CBC49EA00060CEB /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		57F3747D2CBC49EA00060CEB /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 57F3747C2CBC49EA00060CEB /* FirebaseAppCheck */; };
+		57F3747F2CBC49EA00060CEB /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 57F3747E2CBC49EA00060CEB /* FirebaseAppDistribution-Beta */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		57F374552CBC377700060CEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F3747D2CBC49EA00060CEB /* FirebaseAppCheck in Frameworks */,
+				57F374772CBC49EA00060CEB /* FirebaseAnalytics in Frameworks */,
+				57F3747F2CBC49EA00060CEB /* FirebaseAppDistribution-Beta in Frameworks */,
+				57F3747B2CBC49EA00060CEB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				57F374792CBC49EA00060CEB /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +125,11 @@
 			);
 			name = "Dating App";
 			packageProductDependencies = (
+				57F374762CBC49EA00060CEB /* FirebaseAnalytics */,
+				57F374782CBC49EA00060CEB /* FirebaseAnalyticsOnDeviceConversion */,
+				57F3747A2CBC49EA00060CEB /* FirebaseAnalyticsWithoutAdIdSupport */,
+				57F3747C2CBC49EA00060CEB /* FirebaseAppCheck */,
+				57F3747E2CBC49EA00060CEB /* FirebaseAppDistribution-Beta */,
 			);
 			productName = "Dating App";
 			productReference = 57F374442CBC377600060CEB /* Dating App.app */;
@@ -195,6 +213,9 @@
 			);
 			mainGroup = 57F3743B2CBC377600060CEB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				57F374752CBC49EA00060CEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 57F374452CBC377600060CEB /* Products */;
 			projectDirPath = "";
@@ -396,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dating App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4FVBT3XA9H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dating App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4FVBT3XA9H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -552,6 +575,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57F374752CBC49EA00060CEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57F374762CBC49EA00060CEB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F374752CBC49EA00060CEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		57F374782CBC49EA00060CEB /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F374752CBC49EA00060CEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		57F3747A2CBC49EA00060CEB /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F374752CBC49EA00060CEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		57F3747C2CBC49EA00060CEB /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F374752CBC49EA00060CEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		57F3747E2CBC49EA00060CEB /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F374752CBC49EA00060CEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57F3743C2CBC377600060CEB /* Project object */;
 }
