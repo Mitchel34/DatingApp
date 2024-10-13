@@ -1,0 +1,10 @@
+platform :ios, '13.0'
+
+target 'Dating App' do
+  use_frameworks!
+
+  # Pods for Dating App
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+end
